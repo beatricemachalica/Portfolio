@@ -1,84 +1,121 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Béatrice Machalica Portfolio développement web et web mobile</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>Béatrice Machalica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media_style.css">
 </head>
+
 <body>
-    <!-- first section : heroHeader -->
-    <section class="heroHeader">
-        <h1 class="mainTitle" id="anchorHome">
-            Béatrice Machalica <br>
-            Développeuse Web et Web Mobile
-        </h1>
-    </section>
-    <nav class="mainNav visible">
-        <a class="link1" href="#anchorHome">Accueil</a>
-        <a class="link1" href="#anchorPresentation">Présentation</a>
-        <a class="link1" href="#anchorCompetences">Compétences</a>
-        <a class="link1" href="#anchorTravaux">Mes travaux</a>
-        <a class="link1" href="#anchorContact">Contact</a>
-        <a class="link1" href="#anchorCV">Mon CV</a>
+    <!-- navigation -->
+    <nav class="mainNav flex visible">
+        <img class="logo" src="./img/logo3.jpg" alt="logo">
+        <div>
+            <a class="link1" href="#anchorPresentation">Présentation</a>
+            <a class="link1" href="#anchorCompetences">Compétences</a>
+            <a class="link1" href="#anchorTravaux">Mes travaux</a>
+            <a class="link1" href="#anchorContact">Contact</a>
+            <a class="link1" href="#anchorCV">Mon CV</a>
+        </div>
     </nav>
+
+    <!-- Hero Header -->
+    <section class="heroHeader"></section>
+    <div class="bgText">
+        <h1 class="mainTitle" id="anchorHome">Béatrice Machalica</h1>
+        <p class="jobTitle">Développeuse Web et Web Mobile</p>
+    </div>
+
+    <!-- Section presentation -->
     <section class="presentation">
-        <h2 class="sectionTitle" id="anchorPresentation">Présentation</h2>
-        <article>
-            <figure class="photoPresentation"></figure>
-            <p class="textePresentation">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Dolorem amet ut sint distinctio. 
-                Maxime, ipsa? Dolore quisquam rem tenetur laudantium. 
-                Dolorem amet ut sint distinctio.
-            </p>
+        <h2 class="sectionTitle pseudo_border" id="anchorPresentation">Présentation</h2>
+        <article class="presentationArticle flex">
+            <figure class="figurePhoto">
+                <img class="myPicture" src="./img/photoProfil.jpg" alt="my picture">
+            </figure>
+            <div class="textePresentation">
+                <p>Bienvenue sur mon portfolio,
+                    je m'appelle Béatrice et je suis <em>développeuse web</em> et web mobile junior.
+                    J'ai toujours été à l'aise en informatique grâce notamment à ma curiosité et ma patience naturelle.
+                </p>
+                <p> J'ai réalisé des études à l'université de Strasbourg où j'ai pu obtenir mon master 2 en
+                    Plurilinguisme et interculturalité européenne. Ainsi, mon aventure dans le développement a
+                    réellement commencée après mon cursus universitaire.
+                    J'ai donc débuté, en autodidacte, par apprendre différents langages tels que <em>Python</em>,
+                    <em>HTML5</em>, <em>CSS3</em>, <em>Javascript</em> etc.
+                </p>
+                <p>Actuellement, je suis en formation intensive à ELAN-formation de Colmar où j'apprends à utiliser
+                    plusieurs outils et langages.</p>
+                <p> N'hésitez pas à télécharger mon <a href="">CV</a> ou à consulter mes projets dans ce portfolio.
+                    À bientôt !</p>
+            </div>
         </article>
     </section>
+
+    <!-- Section competences -->
     <section class="sectionCompetences">
-        <h2 class="sectionTitle" id="anchorCompetences">Mes Compétences</h2>
-        <article class="mesCompetences">
+        <h2 class="sectionTitle pseudo_border" id="anchorCompetences">Mes Compétences</h2>
+        <article class="mesCompetences flex">
+
+            <!-- Partie : Compétences Front-end -->
             <article class="competencesFrontend">
                 <h3>Compétences Front-end</h3>
-                <p>
-                    <figure></figure> HTML5
-                </p>
-                <p>
-                    <figure></figure> CSS3
-                </p>
-                <p>
-                    <figure></figure> JavaScript (ES6)
-                </p>
+                <div><img src="./img/logoHTML5.png" alt="logo HTML5">
+                    <p> HTML5 </p>
+                </div>
+                <div><img src="./img/logoCSS3.png" alt="logoCSS3">
+                    <p> CSS3 </p>
+                </div>
+                <div><img src="./img/logoJS.png" alt="logo JS">
+                    <p> JavaScript (ES6) </p>
+                </div>
             </article>
+
+            <!-- Partie : Compétences Back-end -->
             <article class="competencesBackend">
                 <h3>Compétences Back-end</h3>
-                <p>
-                    <figure></figure> PHP7
-                </p>
-                <p>
-                    <figure></figure> MySQL
-                </p>
-                <p>
-                    <figure></figure> Python
-                </p>
+                <div><img src="./img/logoPHP.png" alt="logo PHP">
+                    <p> PHP7 </p>
+                </div>
+                <div><img src="./img/logoMySQL.png" alt="logo MySQL">
+                    <p> MySQL </p>
+                </div>
+                <div><img src="./img/logoPython.png" alt="logo Python">
+                    <p> Python </p>
+                </div>
             </article>
+
+            <!-- Partie : Compétences outils et frameworks -->
             <article class="competencesFramework">
                 <h3>Outils et Frameworks</h3>
-                <p>
-                    <figure></figure> Symfony 5
-                </p>
-                <p>
-                    <figure></figure> Bootstrap
-                </p>
-                <p>
-                    <figure></figure> jQuery
-                </p>
+                <div><img src="./img/logoSymfony.png" alt="logo Symfony">
+                    <p> Symfony 5 </p>
+                </div>
+                <div><img src="./img/logoBootstrap.png" alt="logo Bootstrap">
+                    <p> Bootstrap </p>
+                </div>
+                <div><img src="./img/logojQuery.png" alt="logo jQuery">
+                    <p> jQuery </p>
+                </div>
+                <div><img src="./img/logoGit.png" alt="logo Git">
+                    <p> GitHub & Git </p>
+                </div>
             </article>
         </article>
     </section>
+
+    <!-- Section Travaux -->
     <section class="sectionTravaux">
-        <h2 class="sectionTitle" id="anchorTravaux">Mes travaux</h2>
+        <h2 class="sectionTitle pseudo_border" id="anchorTravaux">Mes travaux</h2>
         <article>
             <figure>
                 <figcaption></figcaption>
@@ -94,14 +131,16 @@
         <!-- ajouter l'option "load more" -->
         <!-- ajouter une option pour trier par langages etc. -->
     </section>
-    <section class="sectionContact">
-        <h2 class="sectionTitle" id="anchorContact">Contact</h2>
+
+    <!-- Section Contact -->
+    <section class="sectionContact flex">
+        <h2 class="sectionTitle pseudo_border" id="anchorContact">Contact</h2>
         <article>
-            <form action="###" method="POST">
-                <input type="text" name="" id=""><br/>
-                <input type="email" name="" id=""><br/>
-                <input type="text" name="" id=""><br/>
-                <input type="submit" value="Envoyer"><br/>
+            <form class="formArticle flex" action="#" method="POST">
+                <input type="text" name="" id="Nom" value="Nom" required>
+                <input type="email" name="" id="Email" value="Email" required>
+                <input type="text" name="" id="Message" value="Message">
+                <input class="submit" type="submit" id="Submit" value="Envoyer">
             </form>
         </article>
         <article id="anchorCV">
@@ -110,10 +149,13 @@
             <a href=""></a>
         </article>
     </section>
+
+    <!-- Footer -->
     <footer>
         <p>
-            © 2021 Béatrice MACHALICA, Tous droits réservés. 
+            © 2021 Béatrice MACHALICA, Tous droits réservés.
         </p>
     </footer>
 </body>
+
 </html>

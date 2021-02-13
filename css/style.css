@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    margin: 0;
+}
+img{
+    width: 100%;
+    vertical-align: top;
+}
+figure{
+    margin: 0;
+}
+.flex{
+    display: flex;
+}
+
+/* nav */
+.logo{
+    width: 9%;
+    height: auto;
+    border-bottom: 1px solid black;
+}
+
+.mainNav{
+    background-color: rgb(55, 55, 55);
+    /* border-bottom: 2px solid black; */
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+}
+
+.link1{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(165, 143, 250);
+    padding: 15px;
+    font-size: 1.2rem;
+    margin-right: 45px;
+}
+
+/* section Hero Header */
+
+.heroHeader{
+    height: 90vh;
+    background-image: url(../img/bgImg4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 55px;
+}
+
+.bgText{
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.8); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 55%;
+    padding: 30px;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+/* all h2 */
+
+h2{
+    margin:0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: gray;
+}
+
+/* purple border under h2 title */
+
+.pseudo_border{
+    position:relative;
+    display:inline-block;
+}
+
+.pseudo_border:after{
+    content:'';
+    position:absolute;
+    left:0; right:0;
+    top:100%;
+    margin:10px auto;
+    width:50%;
+    height:6px;
+    background:rgb(165, 143, 250);
+}
+
+/* section presentation */
+
+.presentation{
+    margin : 115px 0 115px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.presentationArticle{
+    margin-top: 80px;
+    justify-content: center;
+}
+
+.figurePhoto{
+    margin-right: 65px;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.myPicture{
+    clip-path: polygon(25% 0, 73% 0, 100% 31%, 100% 74%, 76% 100%, 26% 100%, 0 74%, 0 31%);
+}
+
+.textePresentation{
+    font-size: 1.1rem;
+    margin: 0;
+    width: 60%;
+    text-align: justify;
+}
+
+em{
+    font-weight: bold;
+}
+
+/* Section competences */
+
+.sectionCompetences{
+    padding: 90px 0 90px 0;
+    display: flex;
+    flex-direction: column;
+}
+.mesCompetences{
+    margin-top: 80px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.mesCompetences h3{
+    font-size: 1.6rem;
+    color: rgb(100, 100, 100);
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.sectionCompetences div img{
+    width: 65px;
+    height: auto;
+}
+.sectionCompetences div{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+    font-size: 1.3rem;
+    color: gray;
+    font-weight: bold;
+}
+
+/* Travaux */
+
+.sectionTravaux{
+    padding: 90px 0 90px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Section contact */
+
+.sectionContact{
+    padding: 90px 0 90px 0;
+    flex-direction: column;
+    background: #323232;
+    color: white;
+}
+.sectionContact h2{
+    color: white;
+}
+.sectionContact article{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+.formArticle{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 45%;
+}
+.formArticle #Nom, #Email{
+    height: 40px;
+    background: gray;
+    margin-top: 25px;
+    color: white;
+    padding: 10px;
+    font-size: 1.1rem;
+    border: none;
+}
+.formArticle #Message{
+    height: 115px;
+    background: gray;
+    margin-top: 25px;
+    color: white;
+    padding: 10px;
+    font-size: 1.1rem;
+    border: none;
+}
+.formArticle #Submit{
+    height: 40px;
+    background-color:rgb(140, 112, 251);
+    margin-top: 25px;
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: none;
+}
+
+/* footer */
+
+footer{
+    height: 195px;
+    background: #323232;
+    color: white;
+}
+footer p{
+    margin: 0;
+}
