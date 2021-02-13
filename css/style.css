@@ -17,11 +17,11 @@ figure{
 }
 
 /* nav */
-.logo{
+/* .logo{
     width: 9%;
     height: auto;
     border-bottom: 1px solid black;
-}
+} */
 
 .mainNav{
     background-color: rgb(55, 55, 55);
@@ -32,12 +32,17 @@ figure{
     width: 100%;
     top: 0;
     z-index: 3;
+    /* Sans le logo il faut déterminer une hauteur */
+    height: 68px;
 }
-
+.mainNav div{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
 .link1{
     text-decoration: none;
     color: rgb(255, 255, 255);
-    border: 2px solid rgb(165, 143, 250);
     padding: 15px;
     font-size: 1.2rem;
     margin-right: 45px;
@@ -79,7 +84,7 @@ h2{
     text-align: center;
     text-transform: uppercase;
     font-size: 2rem;
-    color: gray;
+    color: rgb(93, 93, 93);
 }
 
 /* purple border under h2 title */
@@ -207,6 +212,7 @@ em{
     padding: 10px;
     font-size: 1.1rem;
     border: none;
+    cursor: pointer;
 }
 .formArticle #Message{
     height: 115px;
@@ -216,6 +222,7 @@ em{
     padding: 10px;
     font-size: 1.1rem;
     border: none;
+    cursor: pointer;
 }
 .formArticle #Submit{
     height: 40px;
@@ -225,15 +232,40 @@ em{
     padding: 10px;
     font-size: 1.2rem;
     border: none;
+    cursor: pointer;
+}
+
+/* GitHub Linkedin Links */
+
+.articleLinks{
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3rem;
+}
+.articleLinks div{
+    width: 30%;
+    margin-top: 25px;
+    justify-content: space-around;
+    height: 65px;
+}
+.sectionContact i{
+    font-size: 3rem;
+    color: white;
+    transition: 0.4s;
+}
+.sectionContact i:hover{
+    color: rgb(55, 165, 255);
+    font-size: 4rem;
 }
 
 /* footer */
 
 footer{
-    height: 195px;
     background: #323232;
     color: white;
 }
 footer p{
     margin: 0;
+    font-size: 1rem;
+    text-align: center;
 }

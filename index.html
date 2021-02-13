@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media_style.css">
 </head>
@@ -18,11 +21,12 @@
 <body>
     <!-- navigation -->
     <nav class="mainNav flex visible">
-        <img class="logo" src="./img/logo3.jpg" alt="logo">
+        <!-- <img class="logo" src="./img/logo3.jpg" alt="logo"> -->
         <div>
             <a class="link1" href="#anchorPresentation">Présentation</a>
             <a class="link1" href="#anchorCompetences">Compétences</a>
             <a class="link1" href="#anchorTravaux">Mes travaux</a>
+            <!-- <a class="link1" href="#anchorParcours">Mon Parcours</a> -->
             <a class="link1" href="#anchorContact">Contact</a>
             <a class="link1" href="#anchorCV">Mon CV</a>
         </div>
@@ -136,24 +140,30 @@
     <section class="sectionContact flex">
         <h2 class="sectionTitle pseudo_border" id="anchorContact">Contact</h2>
         <article>
-            <form class="formArticle flex" action="#" method="POST">
+            <form action="#" method="POST" class="formArticle flex">
                 <input type="text" name="" id="Nom" value="Nom" required>
                 <input type="email" name="" id="Email" value="Email" required>
                 <input type="text" name="" id="Message" value="Message">
-                <input class="submit" type="submit" id="Submit" value="Envoyer">
+                <input type="submit" id="Submit" class="submit" value="Envoyer">
             </form>
         </article>
-        <article id="anchorCV">
-            <button><a href=""></a>Mon CV</button>
-            <a href=""></a>
-            <a href=""></a>
+        <article class="articleLinks flex" id="anchorCV">
+            <p>N'hésitez pas à télécharger mon CV ci-dessous ou à consulter mon profil <em>Linkedin</em> ou mon
+                <em>GitHub</em>.</p>
+            <div class="flex">
+                <a href="" title="Cliquez ici pour télécharger mon CV"><i class="fas fa-file"></i></a>
+                <a href="https://www.linkedin.com/in/b%C3%A9atrice-machalica-b62b36a0/" title="Mon profil Linkedin"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/beatricemachalica" title="Mon GitHub"><i
+                        class="fab fa-github-square"></i></a>
+            </div>
         </article>
     </section>
 
     <!-- Footer -->
     <footer>
         <p>
-            © 2021 Béatrice MACHALICA, Tous droits réservés.
+            © 2021 All rights reserved | Béatrice MACHALICA | Mentions Légales
         </p>
     </footer>
 </body>
