@@ -254,8 +254,16 @@ em{
     transition: 0.4s;
 }
 .sectionContact i:hover{
-    color: rgb(55, 165, 255);
     font-size: 4rem;
+}
+.sectionContact .fa-file:hover{
+    color: rgb(140, 112, 251);
+}
+.sectionContact .fa-linkedin:hover{
+    color: rgb(55, 165, 255);
+}
+.sectionContact .fa-github-square:hover{
+    color: rgb(255, 113, 113);
 }
 
 /* footer */
@@ -268,4 +276,5 @@ footer p{
     margin: 0;
     font-size: 1rem;
     text-align: center;
+    padding-bottom: 25px;
 }
