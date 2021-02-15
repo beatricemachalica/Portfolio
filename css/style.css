@@ -51,13 +51,14 @@ figure{
 /* section Hero Header */
 
 .heroHeader{
-    height: 90vh;
+    height: 95vh;
     background-image: url(../img/bgImg4.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     top: 55px;
+    filter: blur(5px);
 }
 
 .bgText{
@@ -108,9 +109,10 @@ h2{
 /* section presentation */
 
 .presentation{
-    margin : 115px 0 115px 0;
+    padding: 120px 50px;
     display: flex;
     flex-direction: column;
+    background: #F5F5F5;
 }
 
 .presentationArticle{
@@ -127,7 +129,7 @@ h2{
 }
 
 .myPicture{
-    clip-path: polygon(25% 0, 73% 0, 100% 31%, 100% 74%, 76% 100%, 26% 100%, 0 74%, 0 31%);
+    /* clip-path: polygon(25% 0, 73% 0, 100% 31%, 100% 74%, 76% 100%, 26% 100%, 0 74%, 0 31%); */
 }
 
 .textePresentation{
@@ -167,7 +169,7 @@ em{
 .sectionCompetences div{
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
     margin-top: 25px;
     font-size: 1.3rem;
