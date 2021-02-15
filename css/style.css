@@ -176,6 +176,18 @@ em{
     color: gray;
     font-weight: bold;
 }
+.sectionCompetences p{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    font-size: 1.3rem;
+    color: gray;
+    font-weight: bold;
+}
+.autreCompetences{
+    flex-direction: column;
+    margin: 0;
+}
 
 /* Travaux */
 
